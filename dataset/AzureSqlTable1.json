@@ -1,0 +1,37 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Id",
+				"type": "varchar"
+			},
+			{
+				"name": "age",
+				"type": "varchar"
+			},
+			{
+				"name": "first",
+				"type": "varchar"
+			},
+			{
+				"name": "last",
+				"type": "varchar"
+			},
+			{
+				"name": "phone",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "customer"
+		}
+	}
+}
